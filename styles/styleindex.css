@@ -1,0 +1,31 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+*{
+    background-color: #919191;
+}
+
+.corpo{
+
+}
+
+.cabecalho{
+    background-color: #63F5E9;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cabecalho_links{
+    text-decoration: none;
+    background-color: #63F5E9;
+    color: #1028E0;
+    padding: 1%;
+    border: 2px solid #1028E0;
+    border-radius: 10px;
+}
+
+.cabecalho_links:hover{
+    background-color: #1028E0;
+    color: #63F5E9;
+    border-radius: 10px;
+}
