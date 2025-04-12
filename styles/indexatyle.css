@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho__navegacao{
+    display: flex;
+    flex-direction: row;
+}
+
+.cabecalho__lista{
+    display: flex;
+    flex-direction: row;
+         
+}
+
+.lista__itens{
+    display: flex;
+    justify-content: space-around;
+}
