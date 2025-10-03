@@ -1,12 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Potifolio</title>
 </head>
+
 <body>
-    
+    <div class="nav">
+        <div class="nav__links">
+            <img src="./img/home.svg" alt="" class="nav__links__img">
+            <a href="" class="nav__links__texto">HOME</a>
+        </div>
+        <div class="nav__links">
+            <img src="./img/user.svg" alt="" class="nav__links__img">
+            <a href="#sobre" class="nav__links__texto">SOBRE</a>
+        </div>
+        <div class="nav__links">
+            <img src="./img/package.svg" alt="" class="nav__links__img">
+            <a href="#projetos" class="nav__links__texto">PROJETOS</a>
+        </div>
+        <div class="nav__links">
+            <img src="./img/link.svg" alt="" class="nav__links__img">
+            <a href="#contatos" class="nav__links__texto">CONTATOS</a>
+        </div>
+    </div>
+
+    <div class="apresentacao">
+        <div class="apresentacao__conteiner">
+            <div class=" apresentacao__texto">
+                <h1 class="apresentacao__texto__titulo">Olá, eu sou o Eduardo!</h1>
+                <p class="apresentacao__texto__apresentacao">
+                    Sou desenvolvedor Java especializado em criar soluções robustas e escaláveis, alinhadas às melhores
+                    práticas de desenvolvimento. Agradeço seu interesse e estou à disposição para contribuir com
+                    projetos
+                    desafiadores.<br>
+                    <strong class="texto__strong">Vamos trocar uma ideia e criar algo incrível
+                        juntos?</strong>
+                </p>
+            </div>
+            <div class="apresentacao__links">
+                <div class="contatos-list-links">
+                    <img src="./img/linkedin.svg" alt="" class="list-links-img">
+                    <a href="" class="list-links-text">Linkedin</a>
+                </div>
+                <div class="contatos-list-links">
+                    <img src="./img/github.svg" alt="" class="list-links-img">
+                    <a href="" class="list-links-text">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="apresentacao__img">
+            <img src="./img/img-1.jpg" alt="" class="apresentacao__img_img">
+        </div>
+    </div>
+
+    <div class="sobre">
+        <div class="sobre__img">
+            <img src="./img/img_2.jpg" alt="" class="sobre__img__img">
+        </div>
+        <div class="sobre__texto">
+            <h2 class="sobre__texto__titulo" id="sobre">SOBRE</h2>
+            <p class="sobre__texto__texto">
+                <strong>Desenvolvedor Java</strong><br>
+                Especializado na construção de aplicações robustas utilizando Java, Spring Boot e MySQL, possuo
+                expertise no desenvolvimento de soluções tecnológicas eficientes e escaláveis.<br>
+                Minha atuação compreende a implementação de APIs REST, arquitetura de sistemas e gestão de bancos
+                de dados relacionais, sempre pautada pelas melhores práticas de engenharia de software e qualidade de
+                código.<br>
+                Comprometido com a excelência técnica, busco constantemente otimizar desempenho e contribuir para
+                projetos que demandem soluções estruturadas e de alta confiabilidade.<br>
+                <strong class="texto__strong">
+                    Estou aberto a novas oportunidades e parcerias. Convido-o a explorar meus projetos e entrar em
+                    contato para discutirmos como posso agregar valor à sua organização.
+                </strong>
+            </p>
+        </div>
+    </div>
+
+    <div class="projetos">
+        <div class="projetos__titulo">
+            <h2 class="projetos__titulo__titulo" id="projetos">PROJETOS</h2>
+        </div>
+        <div class="projetos__cards">
+            <!--Comoço do card-->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">PORTIFOLIO</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-card-texto">
+                            <div class="flip-card-titulo">
+                                <h4 class="card-titulo-titulo">Portifolio</h4>
+                            </div>
+                            <div class="flip-card-descricao">
+                                <h5 class="card-descricao-titulo">Descrição</h5>
+                                <p class="card-descricao-texto">
+                                    Descrição
+                                </p>
+                            </div>
+                            <div class="flip-card-linguagens">
+                                <h5 class="card-linguagem-titulo">Linguagens</h5>
+                                <p class="card-linguagem-texto">HTML</p>
+                                <div class="progress">
+                                    <div class="progress-bar-html"></div>
+                                </div>
+                                <p class="card-linguagem-texto">CSS</p>
+                                <div class="progress">
+                                    <div class="progress-bar-css"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-link">
+                            <a href="" class="card-link">Acesse o Github aqui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fim do card-->
+            <!--Comoço do card-->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">JOGO DA VELHA</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-card-texto">
+                            <div class="flip-card-titulo">
+                                <h4 class="card-titulo-titulo">Jogo da Velha</h4>
+                            </div>
+                            <div class="flip-card-descricao">
+                                <h5 class="card-descricao-titulo">Descrição</h5>
+                                <p class="card-descricao-texto">
+                                    Descrição
+                                </p>
+                            </div>
+                            <div class="flip-card-linguagens">
+                                <h5 class="card-linguagem-titulo">Linguagens</h5>
+                                <p class="card-linguagem-texto">HTML</p>
+                                <div class="progress">
+                                    <div class="progress-bar-html"></div>
+                                </div>
+                                <p class="card-linguagem-texto">CSS</p>
+                                <div class="progress">
+                                    <div class="progress-bar-css"></div>
+                                </div>
+                                <p class="card-linguagem-texto">Javascript</p>
+                                <div class="progress">
+                                    <div class="progress-bar-css"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-link">
+                            <a href="" class="card-link">Acesse o Github aqui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fim do card-->
+            <!--Comoço do card-->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">CONTROLE DE EPI'S</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-card-texto">
+                            <div class="flip-card-titulo">
+                                <h4 class="card-titulo-titulo">Controle de Epi's</h4>
+                            </div>
+                            <div class="flip-card-descricao">
+                                <h5 class="card-descricao-titulo">Descrição</h5>
+                                <p class="card-descricao-texto">
+                                    Descrição
+                                </p>
+                            </div>
+                            <div class="flip-card-linguagens">
+                                <h5 class="card-linguagem-titulo">Linguagens</h5>
+                                <p class="card-linguagem-texto">HTML</p>
+                                <div class="progress">
+                                    <div class="progress-bar-html"></div>
+                                </div>
+                                <p class="card-linguagem-texto">CSS</p>
+                                <div class="progress">
+                                    <div class="progress-bar-css"></div>
+                                </div>
+                                <p class="card-linguagem-texto">Javascript</p>
+                                <div class="progress">
+                                    <div class="progress-bar-css"></div>
+                                </div>
+                                <p class="card-linguagem-texto">Java</p>
+                                <div class="progress">
+                                    <div class="progress-bar-css"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-link">
+                            <a href="" class="card-link">Acesse o Github aqui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fim do card-->
+        </div>
+    </div>
+
+    <div class="contatos">
+        <div>
+            <h2 class="contatos-titulo" id="contatos">CONTATOS</h2>
+        </div>
+        <div class="contatos-list">
+            <div class="contatos-list-links">
+                <img src="./img/linkedin.svg" alt="" class="list-links-img">
+                <a href="" class="list-links-text">Linkedin</a>
+            </div>
+            <div class="contatos-list-links">
+                <img src="./img/github.svg" alt="" class="list-links-img">
+                <a href="" class="list-links-text">Github</a>
+            </div>
+            <div class="contatos-list-links">
+                <img src="./img/mail.svg" alt="" class="list-links-img">
+                <a class="list-links-text" href="mailto:eduardomateussilva48@gmail.com">E-mail</a>
+            </div>
+            <div class="contatos-list-links">
+                <img src="./img/instagram.svg" alt="" class="list-links-img">
+                <a href="" class="list-links-text">Instagram</a>
+            </div>
+            <div class="contatos-list-links">
+                <img src="./img/youtube.svg" alt="" class="list-links-img">
+                <a href="" class="list-links-text">Youtube</a>
+            </div>
+        </div>
+    </div>
+    <footer class="rodape">Desenvolvido por Eduardo Mateus da Silva &copy; 2025</footer>
 </body>
+
 </html>
