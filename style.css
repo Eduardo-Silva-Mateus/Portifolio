@@ -340,7 +340,7 @@ a{
     position: absolute;
     background-color: var(--cor-progressbar-html);
     height: 100%;
-    width: 16.1%;
+    width: 59.8%;
     border-radius: 10em;
 }
 
@@ -348,7 +348,7 @@ a{
     position: absolute;
     background-color: var(--cor-progressbar-css);
     height: 100%;
-    width: 16.1%;
+    width: 40.2%;
     border-radius: 10em;
 }
 
