@@ -172,7 +172,7 @@ a{
 
 .flip-card {
   background-color: transparent;
-  width: 30em;
+  width: 32em;
   height: 45em;
 
 }
@@ -230,7 +230,6 @@ a{
     background-color: lightblue;
 
 }
-
 
 .flip-card-texto{
     display: flex;
