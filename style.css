@@ -9,6 +9,11 @@
     --background-principal: #212122;
     --text-color-pricipal:  #FDF5E6;
     --cor-principal--botao: #0F52BA;
+    --cor-progressbar-html: orange;
+    --cor-progressbar-css: indigo;
+    --cor-progressbar-javascript: gold;
+    --cor-progressbar-java: darkred;
+
 }
 
 *{
@@ -49,21 +54,26 @@ a{
     background-color: var(--botao-hover-color);
 }
 
-.nav__links__img{
+.nav__links .nav__links__img{
     width: 2em;
     background-color: var(--cor-principal--botao); 
-
 }
 
-.nav__links__texto{
+.nav__links .nav__links__texto{
     display: flex;
-    padding-left: 1.5rem;
+    margin-left: 1.5rem;
     font-weight: bold;
     background-color: var(--cor-principal--botao);
 }
-.nav__links__texto:hover{
-    color: var(--hover-text-color);
+
+.nav__links:hover .nav__links__img{
+    background-color: var(--botao-hover-color);
 }
+
+.nav__links:hover .nav__links__texto{
+    background-color: var(--botao-hover-color);
+}
+
 
 /*Apresentacao*/
 .apresentacao{
@@ -96,26 +106,6 @@ a{
 
 }
 
-.apresentacao__links__links{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    font-size: 1.5rem;
-    margin-top: 1em;
-    width: 10rem;
-    height: 3rem;
-    border: 0.1em, solid black;
-    border-radius: 5em;
-    background-color: var(--cor-principal--botao);
-}
-
-.apresentacao__links__links:hover{
-    background-color: var(--botao-hover-color);
-    color:var(--hover-text-color);
-}
-
 .apresentacao__img_img{
     height: 45rem;
     border-radius: 100%;
@@ -145,7 +135,7 @@ a{
     border-radius: 100%;
     border: 0.3em, solid black;
     box-shadow: 0 0 10px 10px #0F52BA;
-}
+} 
 
 .sobre__texto{
     display: flex;
@@ -182,8 +172,8 @@ a{
 
 .flip-card {
   background-color: transparent;
-  width: 30em;
-  height: 40em;
+  width: 32em;
+  height: 45em;
 
 }
 
@@ -226,7 +216,19 @@ a{
   display: flex;
   justify-content: flex-start;
   text-align: justify;
-  
+  overflow: auto;
+}
+
+.flip-card-back::-webkit-scrollbar{
+    width: 6px;
+    opacity: 50%;
+}
+
+.flip-card-back::-webkit-scrollbar-thumb{
+    border-radius: 10em;
+    height: 10px;
+    background-color: lightblue;
+
 }
 
 .flip-card-texto{
@@ -234,9 +236,11 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 1.5em;
+    margin-right: 1em;
 }
 
 .flip-card-titulo{
+    text-align: center;
     font-size: 3rem;
     margin-bottom: -1em;
 }
@@ -273,11 +277,78 @@ a{
     border: 2px solid black;
 }
 
-.progress .progress-bar-html{
+/*Controle de Epi's*/
+.progress .progress-ce-html-color{
     position: absolute;
-    background-color: aqua;
+    background-color: var(--cor-progressbar-html);
     height: 100%;
-    width: 100%;
+    width: 50.8%;
+    border-radius: 10em;
+}
+
+.progress .progress-ce-css-color{
+    position: absolute;
+    background-color: var(--cor-progressbar-css);
+    height: 100%;
+    width: 9.6%;
+    border-radius: 10em;
+}
+
+.progress .progress-ce-js-color{
+    position: absolute;
+    background-color: var(--cor-progressbar-javascript);
+    height: 100%;
+    width: 3.8%;
+    border-radius: 10em;
+}
+
+.progress .progress-ce-java-color{
+    position: absolute;
+    background-color: var(--cor-progressbar-java);
+    height: 100%;
+    width: 35.8%;
+    border-radius: 10em;
+}
+
+/*Jogo da Velha*/
+.progress .progress-jv-html-color{
+    position: absolute;
+    background-color: var(--cor-progressbar-html);
+    height: 100%;
+    width: 16.1%;
+    border-radius: 10em;
+}
+
+.progress .progress-jv-css-color{
+    position: absolute;
+    background-color: var(--cor-progressbar-css);
+    height: 100%;
+    width: 37.3%;
+    border-radius: 10em;
+}
+
+.progress .progress-jv-js-color{
+    position: absolute;
+    background-color: var(--cor-progressbar-javascript);
+    height: 100%;
+    width: 46.6%;
+    border-radius: 10em;
+}
+
+/*Portifolio*/
+.progress .progress-portifolio-html-color{
+    position: absolute;
+    background-color: var(--cor-progressbar-html);
+    height: 100%;
+    width: 16.1%;
+    border-radius: 10em;
+}
+
+.progress .progress-portifolio-css-color{
+    position: absolute;
+    background-color: var(--cor-progressbar-css);
+    height: 100%;
+    width: 16.1%;
     border-radius: 10em;
 }
 
@@ -300,6 +371,7 @@ a{
     height: 3rem;
     border: 0.1em, solid black;
     border-radius: 5em;
+    margin-bottom: 1rem;
 }
 
 .card-link:hover{
@@ -357,6 +429,14 @@ a{
 }
 
 .contatos-list-links:hover{
+    background-color: var(--botao-hover-color);
+}
+
+.contatos-list-links:hover .list-links-img{
+    background-color: var(--botao-hover-color);
+}
+
+.contatos-list-links:hover .list-links-text{
     background-color: var(--botao-hover-color);
 }
 
