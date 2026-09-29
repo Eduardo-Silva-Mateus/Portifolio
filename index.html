@@ -5,38 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Potifolio</title>
+    <title>Eduardo Silva | Desenvolvedor Java</title>
+    <meta
+        name="description"
+        content="Portfólio de Eduardo Mateus da Silva, Técnico em Desenvolvimento de Sistemas pelo SENAI, com foco em Java, Spring Boot e desenvolvimento backend."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="nav">
+    <nav class="nav" aria-label="Navegação principal">
         <div class="nav__links">
             <img src="./img/home.svg" alt="" class="nav__links__img">
-            <a href="" class="nav__links__texto">HOME</a>
+            <a href="#home" class="nav__links__texto">HOME</a>
         </div>
+
         <div class="nav__links">
             <img src="./img/user.svg" alt="" class="nav__links__img">
             <a href="#sobre" class="nav__links__texto">SOBRE</a>
         </div>
+
         <div class="nav__links">
             <img src="./img/package.svg" alt="" class="nav__links__img">
             <a href="#projetos" class="nav__links__texto">PROJETOS</a>
         </div>
+
         <div class="nav__links">
             <img src="./img/link.svg" alt="" class="nav__links__img">
             <a href="#contatos" class="nav__links__texto">CONTATOS</a>
         </div>
-    </div>
+    </nav>
 
     <div class="apresentacao">
         <div class="apresentacao__conteiner">
             <div class=" apresentacao__texto">
                 <h1 class="apresentacao__texto__titulo">Olá, eu sou o Eduardo!</h1>
                 <p class="apresentacao__texto__apresentacao">
-                    Sou desenvolvedor Java especializado em criar soluções robustas e escaláveis, alinhadas às melhores
-                    práticas de desenvolvimento. Agradeço seu interesse e estou à disposição para contribuir com
-                    projetos desafiadores.<br>
-                    <strong class="texto__strong">Vamos trocar uma ideia e criar algo incrível juntos?</strong>
+                    Sou Técnico em Desenvolvimento de Sistemas pelo SENAI,
+                    com formação concluída em 2024, e estou direcionando
+                    minha carreira para o desenvolvimento backend com Java.
+
+                    Tenho conhecimentos em Java, Spring Boot, SQL e
+                    desenvolvimento de aplicações web, aplicados em
+                    projetos acadêmicos.
+                    <br>
+                    <strong class="texto__strong">
+                        Estou em busca da minha primeira oportunidade
+                        como Desenvolvedor Java Júnior.
+                    </strong>
                 </p>
             </div>
             <div class="apresentacao__links">
@@ -64,17 +82,30 @@
             <h2 class="sobre__texto__titulo" id="sobre">SOBRE</h2>
             </a>
             <p class="sobre__texto__texto">
-                <strong>Desenvolvedor Java Full Stack</strong><br>
-                Especializado na construção de aplicações robustas utilizando Java, Springboot e MySQL, possuo
-                expertise no desenvolvimento de soluções tecnológicas eficientes e escaláveis.<br>
-                Minha atuação compreende a implementação de APIs REST, arquitetura de sistemas e gestão de bancos
-                de dados relacionais, sempre pautada pelas melhores práticas de engenharia de software e qualidade de
-                código.<br>
-                Comprometido com a excelência técnica, busco constantemente otimizar desempenho e contribuir para
-                projetos que demandem soluções estruturadas e de alta confiabilidade.<br>
+                <strong>
+                    Técnico em Desenvolvimento de Sistemas
+                </strong>
+                <br>
+                Concluí minha formação no SENAI em 2024 e atualmente
+                direciono meus estudos para o desenvolvimento
+                backend com Java.
+                <br>
+                Tenho conhecimentos em Java 17, Spring Boot,
+                Spring Data JPA, Hibernate, SQL e MariaDB,
+                além de conhecimentos em HTML, CSS, JavaScript
+                e Thymeleaf.
+                <br>
+                Como projeto de conclusão de curso, desenvolvi
+                uma aplicação web para gerenciamento de
+                Equipamentos de Proteção Individual (EPIs),
+                com funcionalidades de cadastro, controle
+                de estoque, empréstimos e devoluções.
+                <br>
                 <strong class="texto__strong">
-                    Estou aberto a novas oportunidades e parcerias. Convido-o a explorar meus projetos e entrar em
-                    contato para discutirmos como posso agregar valor à sua organização.
+                    Estou em busca de uma oportunidade para
+                    aplicar meus conhecimentos, colaborar com
+                    uma equipe e continuar evoluindo como
+                    desenvolvedor.
                 </strong>
             </p>
         </div>
@@ -107,27 +138,25 @@
                                 </p>
                             </div>
                             <div class="flip-card-linguagens">
-                                <h5 class="card-linguagem-titulo">Linguagens</h5>
-                                <p class="card-linguagem-texto">HTML</p>
-                                <div class="progress">
-                                    <div class="progress-ce-html-color"></div>
-                                </div>
-                                <p class="card-linguagem-texto">CSS</p>
-                                <div class="progress">
-                                    <div class="progress-ce-css-color"></div>
-                                </div>
-                                <p class="card-linguagem-texto">Javascript</p>
-                                <div class="progress">
-                                    <div class="progress-ce-js-color"></div>
-                                </div>
-                                <p class="card-linguagem-texto">Java</p>
-                                <div class="progress">
-                                    <div class="progress-ce-java-color"></div>
+                                <h5 class="card-linguagem-titulo">
+                                    Tecnologias utilizadas
+                                </h5>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Java 17</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">Thymeleaf</span>
+                                    <span class="tech-tag">MariaDB</span>
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
                                 </div>
                             </div>
                         </div>
                         <div class="flip-card-link">
-                            <a href="https://github.com/Eduardo-Silva-Mateus/Controle-de-Epis" target="_blank" class="card-link">Acesse o Repositorio aqui</a>
+                        <a href="https://github.com/Eduardo-Silva-Mateus/Controle-de-Epis" target="_blank" rel="noopener noreferrer"
+                            class="card-link">
+                            Ver código no GitHub
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -147,27 +176,23 @@
                             <div class="flip-card-descricao">
                                 <h5 class="card-descricao-titulo">Descrição</h5>
                                 <p class="card-descricao-texto">
-                                    Projeto desenvolvido em sala, para aprender a manipulação de <strong>elementos DOM em JavaScript.</strong> 
+                                    Projeto desenvolvido em sala, para aprender a manipulação de <strong>elementos DOM em JavaScript.</strong>
                                 </p>
                             </div>
                             <div class="flip-card-linguagens">
-                                <h5 class="card-linguagem-titulo">Linguagens</h5>
-                                <p class="card-linguagem-texto">HTML</p>
-                                <div class="progress">
-                                    <div class="progress-jv-html-color"></div>
-                                </div>
-                                <p class="card-linguagem-texto">CSS</p>
-                                <div class="progress">
-                                    <div class="progress-jv-css-color"></div>
-                                </div>
-                                <p class="card-linguagem-texto">Javascript</p>
-                                <div class="progress">
-                                    <div class="progress-jv-js-color"></div>
+                                <h5 class="card-linguagem-titulo">Tecnologias Utilizadas</h5>
+                                <div class="tech-tag">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
                                 </div>
                             </div>
                         </div>
                         <div class="flip-card-link">
-                            <a href="https://github.com/Eduardo-Silva-Mateus/jogo-da-velha"  target="_blank" class="card-link">Acesse o Repositorio aqui</a>
+                            <a href="https://github.com/Eduardo-Silva-Mateus/jogo-da-velha" target="_blank" rel="noopener noreferrer"
+                                class="card-link">
+                                Ver código no GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -177,7 +202,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <p class="title">PORTIFOLIO</p>
+                        <p class="title">Portifolio</p>
                     </div>
                     <div class="flip-card-back">
                         <div class="flip-card-texto">
@@ -191,19 +216,18 @@
                                 </p>
                             </div>
                             <div class="flip-card-linguagens">
-                                <h5 class="card-linguagem-titulo">Linguagens</h5>
-                                <p class="card-linguagem-texto">HTML</p>
-                                <div class="progress">
-                                    <div class="progress-portifolio-html-color"></div>
-                                </div>
-                                <p class="card-linguagem-texto">CSS</p>
-                                <div class="progress">
-                                    <div class="progress-portifolio-css-color"></div>
+                                <h5 class="card-linguagem-titulo">Tecnologias Utilizadas</h5>
+                                <div class="tech-tag">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
                                 </div>
                             </div>
                         </div>
                         <div class="flip-card-link">
-                            <a href="https://github.com/Eduardo-Silva-Mateus/Portifolio" target="_blank" class="card-link">Acesse o Repositorio aqui</a>
+                            <a href="https://github.com/Eduardo-Silva-Mateus/Portifolio" target="_blank"
+                                rel="noopener noreferrer" class="card-link">
+                                Ver código no GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -221,7 +245,7 @@
         <div class="contatos-list">
             <div class="contatos-list-links">
                 <img src="./img/linkedin.svg" alt="" class="list-links-img">
-                <a href="https://www.linkedin.com/in/eduardo-mateus-silva" target="_blank" class="list-links-text">Linkedin</a>
+                <a href="https://www.linkedin.com/in/eduardomateussilva" target="_blank" class="list-links-text">Linkedin</a>
             </div>
             <div class="contatos-list-links">
                 <img src="./img/github.svg" alt="" class="list-links-img">
@@ -237,7 +261,7 @@
             </div>
         </div>
     </div>
-    <footer class="rodape">Desenvolvido por Eduardo Mateus da Silva &copy; 2025</footer>
+    <footer class="rodape">Desenvolvido por Eduardo Mateus da Silva &copy; 2026</footer>
 </body>
 
 </html>
