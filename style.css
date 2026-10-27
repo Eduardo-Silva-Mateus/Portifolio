@@ -95,15 +95,18 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 10%;
 }
 
-.apresentacao__texto__titulo{
-    font-size: 6em;
+.apresentacao__texto__titulo {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
 }
 
-.apresentacao__texto__apresentacao{
-    font-size: 2em;
+.apresentacao__texto__apresentacao {
+    font-size: clamp(1rem, 1.4vw, 1.25rem);
+    line-height: 1.8;
+    max-width: 700px;
 }
 
 .apresentacao__links{
@@ -123,6 +126,22 @@ a{
 
 .texto__strong{
     color: var(--strong-text-color);
+}
+
+.botao-projetos {
+    display: inline-block;
+    background-color: var(--cor-principal--botao);
+    color: var(--text-color-pricipal);
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao-projetos:hover {
+    background-color: var(--botao-hover-color);
+    transform: translateY(-3px);
 }
 
 /*Sobre*/
@@ -559,11 +578,13 @@ a{
     .contatos {
         margin: 3rem 1rem;
         padding: 0;
+        box-sizing: border-box;
+        min-width: 0;
     }
 
     .apresentacao,
     .sobre {
-        flex-direction: column;
+    flex-direction: column;
         align-items: center;
     }
 
@@ -577,6 +598,9 @@ a{
     .apresentacao__texto__apresentacao,
     .sobre__texto__texto {
         font-size: 1rem;
+            width: 100%;
+            max-width: 100%;
+            overflow-wrap: anywhere;
     }
 
     .apresentacao__img_img,
@@ -615,5 +639,24 @@ a{
     .contatos-list-links {
         width: 100%;
         max-width: 100%;
+    }
+
+    .apresentacao__texto {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .apresentacao__conteiner {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .apresentacao__links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
     }
 }
